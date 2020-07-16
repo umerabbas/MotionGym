@@ -2,34 +2,29 @@
 
 use Illuminate\Database\Seeder;
 
-class SettingsTableSeeder extends Seeder
-{
+class SettingsTableSeeder extends Seeder {
 
     /**
      * Auto generated seed file
      *
      * @return void
      */
-    public function run()
-    {
-        
+    public function run() {
 
         \DB::table('settings')->delete();
-        
-        \DB::table('settings')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('settings')->insert(array(
+            0 => array(
                 'id' => 1,
                 'key' => 'site.title',
                 'display_name' => 'Site Title',
-                'value' => 'Motion Gym',
+                'value' => 'Gym Name',
                 'details' => '',
                 'type' => 'text',
                 'order' => 1,
                 'group' => 'Site',
             ),
-            1 => 
-            array (
+            1 => array(
                 'id' => 2,
                 'key' => 'site.description',
                 'display_name' => 'Site Description',
@@ -39,19 +34,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 2,
                 'group' => 'Site',
             ),
-            2 => 
-            array (
+            2 => array(
                 'id' => 3,
                 'key' => 'site.logo',
                 'display_name' => 'Site Logo',
-                'value' => 'settings\\July2019\\74ac5HVkxjdQz2EB2EBa.png',
+                'value' => NULL,
                 'details' => '',
                 'type' => 'image',
                 'order' => 3,
                 'group' => 'Site',
             ),
-            3 => 
-            array (
+            3 => array(
                 'id' => 4,
                 'key' => 'site.google_analytics_tracking_id',
                 'display_name' => 'Google Analytics Tracking ID',
@@ -61,8 +54,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 4,
                 'group' => 'Site',
             ),
-            4 => 
-            array (
+            4 => array(
                 'id' => 5,
                 'key' => 'admin.bg_image',
                 'display_name' => 'Admin Background Image',
@@ -72,8 +64,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 5,
                 'group' => 'Admin',
             ),
-            5 => 
-            array (
+            5 => array(
                 'id' => 6,
                 'key' => 'admin.title',
                 'display_name' => 'Admin Title',
@@ -83,8 +74,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 1,
                 'group' => 'Admin',
             ),
-            6 => 
-            array (
+            6 => array(
                 'id' => 7,
                 'key' => 'admin.description',
                 'display_name' => 'Admin Description',
@@ -94,8 +84,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 2,
                 'group' => 'Admin',
             ),
-            7 => 
-            array (
+            7 => array(
                 'id' => 8,
                 'key' => 'admin.loader',
                 'display_name' => 'Admin Loader',
@@ -105,8 +94,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 3,
                 'group' => 'Admin',
             ),
-            8 => 
-            array (
+            8 => array(
                 'id' => 9,
                 'key' => 'admin.icon_image',
                 'display_name' => 'Admin Icon Image',
@@ -116,19 +104,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 4,
                 'group' => 'Admin',
             ),
-            9 => 
-            array (
+            9 => array(
                 'id' => 10,
                 'key' => 'admin.google_analytics_client_id',
-            'display_name' => 'Google Analytics Client ID (used for admin dashboard)',
+                'display_name' => 'Google Analytics Client ID (used for admin dashboard)',
                 'value' => NULL,
                 'details' => '',
                 'type' => 'text',
                 'order' => 1,
                 'group' => 'Admin',
             ),
-            10 => 
-            array (
+            10 => array(
                 'id' => 11,
                 'key' => 'company.address',
                 'display_name' => 'Address',
@@ -138,19 +124,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 7,
                 'group' => 'Company',
             ),
-            11 => 
-            array (
+            11 => array(
                 'id' => 12,
                 'key' => 'company.phone_primary',
                 'display_name' => 'Phone Primary',
-            'value' => '(+1) 1156841541',
+                'value' => '(+1) 1156841541',
                 'details' => NULL,
                 'type' => 'text_area',
                 'order' => 8,
                 'group' => 'Company',
             ),
-            12 => 
-            array (
+            12 => array(
                 'id' => 13,
                 'key' => 'company.phone_secondary',
                 'display_name' => 'Phone Secondary',
@@ -160,8 +144,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 9,
                 'group' => 'Company',
             ),
-            13 => 
-            array (
+            13 => array(
                 'id' => 14,
                 'key' => 'company.email_contact',
                 'display_name' => 'Contact Email',
@@ -171,8 +154,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 10,
                 'group' => 'Company',
             ),
-            14 => 
-            array (
+            14 => array(
                 'id' => 15,
                 'key' => 'company.history',
                 'display_name' => 'History of the company',
@@ -187,8 +169,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 11,
                 'group' => 'Company',
             ),
-            15 => 
-            array (
+            15 => array(
                 'id' => 16,
                 'key' => 'company.vision',
                 'display_name' => 'Company vision',
@@ -201,8 +182,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 12,
                 'group' => 'Company',
             ),
-            16 => 
-            array (
+            16 => array(
                 'id' => 17,
                 'key' => 'company.mision',
                 'display_name' => 'Company mision',
@@ -214,8 +194,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 18,
                 'group' => 'Company',
             ),
-            17 => 
-            array (
+            17 => array(
                 'id' => 18,
                 'key' => 'site-main-pages.banner',
                 'display_name' => 'Banner',
@@ -225,19 +204,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 13,
                 'group' => 'Site Main Pages',
             ),
-            18 => 
-            array (
+            18 => array(
                 'id' => 19,
                 'key' => 'site-main-pages.gym_tour',
-            'display_name' => 'Gym tour video (Youtube)',
+                'display_name' => 'Gym tour video (Youtube)',
                 'value' => 'https://www.youtube.com/watch?v=HpM6bRZY4Hc',
                 'details' => NULL,
                 'type' => 'text',
                 'order' => 14,
                 'group' => 'Site Main Pages',
             ),
-            19 => 
-            array (
+            19 => array(
                 'id' => 20,
                 'key' => 'site-main-pages.gym_tour_background',
                 'display_name' => 'Gym tour background',
@@ -247,8 +224,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 15,
                 'group' => 'Site Main Pages',
             ),
-            20 => 
-            array (
+            20 => array(
                 'id' => 21,
                 'key' => 'site-main-pages.gym_tour_message',
                 'display_name' => 'Gym tour message',
@@ -258,19 +234,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 16,
                 'group' => 'Site Main Pages',
             ),
-            21 => 
-            array (
+            21 => array(
                 'id' => 22,
                 'key' => 'admin.creator',
-            'display_name' => 'Admin Creator (Leave empty to remove)',
+                'display_name' => 'Admin Creator (Leave empty to remove)',
                 'value' => '<a href="https://github.com/cristianmarint" target="_blank" style="color: inherit;text-decoration: none;">Cristian Marín</a>',
                 'details' => NULL,
                 'type' => 'code_editor',
                 'order' => 17,
                 'group' => 'Admin',
             ),
-            22 => 
-            array (
+            22 => array(
                 'id' => 23,
                 'key' => 'company.conditions',
                 'display_name' => 'Conditions of service',
@@ -281,8 +255,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 19,
                 'group' => 'Company',
             ),
-            23 => 
-            array (
+            23 => array(
                 'id' => 24,
                 'key' => 'company.policy',
                 'display_name' => 'Privacy policy',
@@ -319,8 +292,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 22,
                 'group' => 'Company',
             ),
-            24 => 
-            array (
+            24 => array(
                 'id' => 25,
                 'key' => 'site-main-pages.carousel_background',
                 'display_name' => 'Carousel background',
@@ -330,8 +302,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 20,
                 'group' => 'Site Main Pages',
             ),
-            25 => 
-            array (
+            25 => array(
                 'id' => 26,
                 'key' => 'site-main-pages.footer',
                 'display_name' => 'Footer',
@@ -341,8 +312,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 21,
                 'group' => 'Site Main Pages',
             ),
-            26 => 
-            array (
+            26 => array(
                 'id' => 27,
                 'key' => 'company.facebook',
                 'display_name' => 'Facebook URL',
@@ -352,8 +322,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 23,
                 'group' => 'Company',
             ),
-            27 => 
-            array (
+            27 => array(
                 'id' => 28,
                 'key' => 'company.twitter',
                 'display_name' => 'Twitter URL',
@@ -363,8 +332,7 @@ class SettingsTableSeeder extends Seeder
                 'order' => 24,
                 'group' => 'Company',
             ),
-            28 => 
-            array (
+            28 => array(
                 'id' => 29,
                 'key' => 'company.slogan',
                 'display_name' => 'Slogan',
@@ -374,8 +342,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 6,
                 'group' => 'Company',
             ),
+            29 => array(
+                'id' => 30,
+                'key' => 'site.vendor',
+                'display_name' => 'Developer Company',
+                'value' => 'Greyneon',
+                'details' => '',
+                'type' => 'text',
+                'order' => 1,
+                'group' => 'Development',
+            ),
         ));
-        
-        
+
     }
 }

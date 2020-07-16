@@ -13,14 +13,14 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<meta name="authors" content="@cristianmarint">
-	
+	{{-- <meta name="authors" content="@cristianmarint"> --}}
+
 	<meta name="description" content="{{setting('site.description')}}">
-	
+
 	<meta name="keywords" content="{{setting('site.description').' , '.setting('site.title')}}">
-	
+
 	<meta charset="UTF-8">
-	
+
 	<title>{{setting('site.title')}} @yield('title')</title>
 
   <!-- Fonts -->
@@ -35,9 +35,9 @@
 <body class="bg-default">
   <div class="main-content">
     <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+    {{-- <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
       <div class="container px-4">
-        <a class="navbar-brand" href="{{route('welcome')}}">
+        <a class="navbar-brand" href="{{route('welcome')}}"> 
           <img src="{{ voyager::image(setting('site.logo')) }}" />
         </a>
 
@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          
+
           <ul class="navbar-nav ml-auto">
             @guest
               <li class="nav-item">
@@ -78,7 +78,7 @@
                       <span>{{ __('Register') }}</span>
                     </a>
                 </li>
-              @endif                
+              @endif
             @else
               <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -103,7 +103,7 @@
 
         </div>
       </div>
-    </nav>
+    </nav> --}}
 
 
     {{-- <!-- Header --> --}}
@@ -138,19 +138,19 @@
           <div class="row align-items-center justify-content-xl-between">
             <div class="col-xl-6">
               <div class="copyright text-center text-xl-left text-muted">
-                  <p class="font-weight-regular ml-1">Copyright {{setting('site.title')}} &copy; {{date('Y')}} All rights reserved  
-                    @if(setting('admin.creator')!=NULL)
+                  <p class="font-weight-regular ml-1">Copyright {{setting('site.vendor')}} &copy; {{date('Y')}} All rights reserved
+                    {{-- @if(setting('admin.creator')!=NULL)
                       | Made with <i class="fa fa-heart" style="color:red !important;"></i> by {!! setting('admin.creator')!!}</p>
-                    @endif  
+                    @endif --}}
               </div>
             </div>
-            <div class="col-xl-6">
+            {{-- <div class="col-xl-6">
               <ul class="nav nav-footer justify-content-center justify-content-xl-end">
                 <li class="nav-item"><a class="nav-link" href="{{route('aboutus')}}">About us</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('policy')}}">Policy</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('conditions')}}">Conditions</a></li>
               </ul>
-            </div>
+            </div> --}}
           </div>
         </div>
       </footer>
