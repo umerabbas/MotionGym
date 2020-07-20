@@ -16,16 +16,11 @@ class RolesTableSeeder extends Seeder {
         \DB::table('roles')->insert(array(
             0 => array(
                 'id' => 1,
-                'name' => 'dev',
-                'display_name' => 'Developer',
-            ),
-            1 => array(
-                'id' => 2,
                 'name' => 'admin',
                 'display_name' => 'Administrator',
             ),
-            2 => array(
-                'id' => 3,
+            1 => array(
+                'id' => 2,
                 'name' => 'user',
                 'display_name' => 'Normal User',
             ),

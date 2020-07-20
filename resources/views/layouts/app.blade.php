@@ -35,7 +35,7 @@
 <body class="bg-default">
   <div class="main-content">
     <!-- Navbar -->
-    {{-- <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
       <div class="container px-4">
         <a class="navbar-brand" href="{{route('welcome')}}"> 
           <img src="{{ voyager::image(setting('site.logo')) }}" />
@@ -103,7 +103,7 @@
 
         </div>
       </div>
-    </nav> --}}
+    </nav>
 
 
     {{-- <!-- Header --> --}}

@@ -16,11 +16,11 @@ class MenusTableSeeder extends Seeder {
         \DB::table('menus')->insert(array(
             0 => array(
                 'id' => 1,
-                'name' => 'dev',
+                'name' => 'admin',
             ),
             1 => array(
                 'id' => 2,
-                'name' => 'admin',
+                'name' => 'user',
             ),
         ));
 
