@@ -34,8 +34,9 @@ class User extends \TCG\Voyager\Models\User {
         'email_verified_at' => 'datetime',
     ];
 
-    public function scopeUsers($query) {
-        return $query->where('name', '!=', 'dev');
+    public function scopeUsers(&$query) {
+        $role = \TCG\Voyager\Models\Role::where('name', 'dev')->first();
+        return $query->where('role_id', '!=', $role->id);
     }
 
     public function person() {

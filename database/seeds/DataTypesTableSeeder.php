@@ -16,7 +16,7 @@ class DataTypesTableSeeder extends Seeder {
             'display_name_singular' => 'User',
             'display_name_plural' => 'Users',
             'icon' => 'voyager-person',
-            'model_name' => 'TCG\\Voyager\\Models\\User',
+            'model_name' => 'App\\User',
             'policy_name' => 'TCG\\Voyager\\Policies\\UserPolicy',
             'controller' => 'TCG\\Voyager\\Http\\Controllers\\VoyagerUserController',
             'description' => 'Here you can store safely employees and others accounts',
@@ -44,7 +44,7 @@ class DataTypesTableSeeder extends Seeder {
             'display_name_singular' => 'Role',
             'display_name_plural' => 'Roles',
             'icon' => 'voyager-lock',
-            'model_name' => 'TCG\\Voyager\\Models\\Role',
+            'model_name' => 'App\\Models\\Role',
             'policy_name' => NULL,
             'controller' => '',
             'description' => '',
@@ -207,6 +207,21 @@ class DataTypesTableSeeder extends Seeder {
             'server_side' => 1,
             'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"invoice_id","scope":null}',
         ),
+
+        array(
+            'name' => 'attendances',
+            'slug' => 'attendances',
+            'display_name_singular' => 'Attendance',
+            'display_name_plural' => 'Attendances',
+            'icon' => 'voyager-person',
+            'model_name' => 'App\\Models\\Attendance',
+            'policy_name' => NULL,
+            'controller' => NULL,
+            'description' => 'Here you can mark member\'s attendance',
+            'generate_permissions' => 1,
+            'server_side' => 1,
+            'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"invoice_id","scope":null}',
+        ),
     ];
 
     public function run() {
@@ -214,6 +229,11 @@ class DataTypesTableSeeder extends Seeder {
 
             $each['details'] = json_decode($each['details']);
             \TCG\Voyager\Models\DataType::create($each);
+
+            if ($each['generate_permissions']) {
+                \TCG\Voyager\Models\Permission::generateFor($each['name']);
+            }
+
         }
     }
 }

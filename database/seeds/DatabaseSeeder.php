@@ -18,22 +18,23 @@ class DatabaseSeeder extends Seeder {
     public function run() {
 
         // Basic Settings & Dummy data (DO NOT USE VOYAGER ONES DUE TO LOSE IN DATA)
+        $this->call(PermissionsTableSeeder::class);
 
         $this->call(DataTypesTableSeeder::class);
         $this->call(DataRowsTableSeeder::class);
 
-        $this->call(MenusTableSeeder::class);
-        $this->call(DevMenuItemsTableSeeder::class);
-        $this->call(AdminMenuItemsTableSeeder::class);
-
         $this->call(RolesTableSeeder::class);
-        $this->call(PermissionsTableSeeder::class);
         $this->call(PermissionRoleTableSeeder::class);
+
+        $this->call(MenusTableSeeder::class);
+        $this->call(AdminMenuItemsTableSeeder::class);
 
         $this->call(SettingsTableSeeder::class);
 
         $this->call(UsersTableSeeder::class);
         $this->call(PaymentMethodTableSeeder::class);
+
+        $this->call(AttendanceSeeder::class);
 
     }
 }

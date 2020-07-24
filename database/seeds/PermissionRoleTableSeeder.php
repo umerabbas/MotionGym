@@ -5,12 +5,12 @@ use Illuminate\Database\Seeder;
 class PermissionRoleTableSeeder extends Seeder {
 
     public function run() {
-        \TCG\Voyager\Models\Permission::where()->first();
+        $data = \TCG\Voyager\Models\Permission::all();
 
-        foreach ($this->data as $each) {
-            \TCG\Voyager\Models\Permission::create($each);
+        $obj = \TCG\Voyager\Models\Role::where('name', 'dev')->first();
+        foreach ($data as $each) {
+            \DB::table('permission_role')->insert(['permission_id' => $each->id, 'role_id' => $obj->id]);
         }
-
     }
 
 }
