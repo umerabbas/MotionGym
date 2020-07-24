@@ -211,6 +211,8 @@ class DataTypesTableSeeder extends Seeder {
 
     public function run() {
         foreach ($this->data as $each) {
+
+            $each['details'] = json_decode($each['details']);
             \TCG\Voyager\Models\DataType::create($each);
         }
     }

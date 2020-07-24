@@ -8,6 +8,9 @@ class MenusTableSeeder extends Seeder {
         array(
             'name' => 'admin',
         ),
+        array(
+            'name' => 'user',
+        ),
     ];
 
     public function run() {

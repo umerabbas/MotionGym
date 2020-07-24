@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder {
                 continue;
             }
             $each['role_id'] = $obj->id;
-
+            // $each['settings'] = json_decode($each['settings']);
             \TCG\Voyager\Models\User::create($each);
         }
 

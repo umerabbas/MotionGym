@@ -1976,6 +1976,8 @@ class DataRowsTableSeeder extends Seeder {
             }
             $each['data_type_id'] = $obj->id;
 
+            $each['details'] = json_decode($each['details']);
+
             \TCG\Voyager\Models\DataRow::create($each);
         }
     }
