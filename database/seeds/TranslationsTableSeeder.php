@@ -2,21 +2,14 @@
 
 use Illuminate\Database\Seeder;
 
-class TranslationsTableSeeder extends Seeder
-{
+class TranslationsTableSeeder extends Seeder {
 
     /**
      * Auto generated seed file
      *
      * @return void
      */
-    public function run()
-    {
-        
+    public function run() {
 
-        \DB::table('translations')->delete();
-        
-        
-        
     }
 }

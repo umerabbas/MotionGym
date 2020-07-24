@@ -2,23 +2,17 @@
 
 use Illuminate\Database\Seeder;
 
-class DataTypesTableSeeder extends Seeder
-{
+class DataTypesTableSeeder extends Seeder {
 
     /**
      * Auto generated seed file
      *
      * @return void
      */
-    public function run()
-    {
-        
+    public function run() {
 
-        \DB::table('data_types')->delete();
-        
-        \DB::table('data_types')->insert(array (
-            0 => 
-            array (
+        \DB::table('data_types')->insert(array(
+            0 => array(
                 'id' => 1,
                 'name' => 'users',
                 'slug' => 'users',
@@ -35,8 +29,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 21:47:40',
                 'updated_at' => '2019-07-26 04:37:20',
             ),
-            1 => 
-            array (
+            1 => array(
                 'id' => 2,
                 'name' => 'menus',
                 'slug' => 'menus',
@@ -53,8 +46,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 21:47:40',
                 'updated_at' => '2019-07-24 21:47:40',
             ),
-            2 => 
-            array (
+            2 => array(
                 'id' => 3,
                 'name' => 'roles',
                 'slug' => 'roles',
@@ -71,8 +63,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 21:47:40',
                 'updated_at' => '2019-07-24 21:47:40',
             ),
-            3 => 
-            array (
+            3 => array(
                 'id' => 4,
                 'name' => 'category',
                 'slug' => 'category',
@@ -89,8 +80,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 22:03:09',
                 'updated_at' => '2019-07-28 19:16:55',
             ),
-            4 => 
-            array (
+            4 => array(
                 'id' => 5,
                 'name' => 'product',
                 'slug' => 'product',
@@ -107,8 +97,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 22:21:02',
                 'updated_at' => '2019-07-29 18:06:26',
             ),
-            5 => 
-            array (
+            5 => array(
                 'id' => 6,
                 'name' => 'extra',
                 'slug' => 'extra',
@@ -125,8 +114,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-24 22:42:46',
                 'updated_at' => '2019-08-01 03:03:28',
             ),
-            6 => 
-            array (
+            6 => array(
                 'id' => 7,
                 'name' => 'insurance_company',
                 'slug' => 'insurance-company',
@@ -143,8 +131,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 13:50:04',
                 'updated_at' => '2019-07-26 14:45:52',
             ),
-            7 => 
-            array (
+            7 => array(
                 'id' => 8,
                 'name' => 'refund',
                 'slug' => 'refund',
@@ -161,8 +148,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 14:25:04',
                 'updated_at' => '2019-08-08 01:33:05',
             ),
-            8 => 
-            array (
+            8 => array(
                 'id' => 9,
                 'name' => 'payment_method',
                 'slug' => 'payment-method',
@@ -179,8 +165,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 14:33:03',
                 'updated_at' => '2019-07-26 14:39:58',
             ),
-            9 => 
-            array (
+            9 => array(
                 'id' => 10,
                 'name' => 'person',
                 'slug' => 'people',
@@ -197,8 +182,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 14:38:25',
                 'updated_at' => '2019-08-03 17:13:50',
             ),
-            10 => 
-            array (
+            10 => array(
                 'id' => 12,
                 'name' => 'state',
                 'slug' => 'state',
@@ -215,8 +199,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 15:09:17',
                 'updated_at' => '2019-07-26 14:44:33',
             ),
-            11 => 
-            array (
+            11 => array(
                 'id' => 13,
                 'name' => 'city',
                 'slug' => 'city',
@@ -233,8 +216,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 15:14:52',
                 'updated_at' => '2019-07-26 14:42:57',
             ),
-            12 => 
-            array (
+            12 => array(
                 'id' => 14,
                 'name' => 'invoice',
                 'slug' => 'invoice',
@@ -251,8 +233,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-25 15:18:19',
                 'updated_at' => '2019-08-01 01:59:51',
             ),
-            13 => 
-            array (
+            13 => array(
                 'id' => 17,
                 'name' => 'service',
                 'slug' => 'service',
@@ -269,8 +250,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-26 04:26:09',
                 'updated_at' => '2019-08-01 19:10:39',
             ),
-            14 => 
-            array (
+            14 => array(
                 'id' => 18,
                 'name' => 'detail',
                 'slug' => 'detail',
@@ -287,8 +267,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2019-07-30 14:47:08',
                 'updated_at' => '2019-07-31 19:36:47',
             ),
-            15 => 
-            array (
+            15 => array(
                 'id' => 19,
                 'name' => 'membership',
                 'slug' => 'membership',
@@ -306,7 +285,6 @@ class DataTypesTableSeeder extends Seeder
                 'updated_at' => '2019-08-01 03:02:08',
             ),
         ));
-        
-        
+
     }
 }

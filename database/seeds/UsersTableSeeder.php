@@ -2,31 +2,25 @@
 
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
-{
+class UsersTableSeeder extends Seeder {
 
     /**
      * Auto generated seed file
      *
      * @return void
      */
-    public function run()
-    {
-        
+    public function run() {
 
-        \DB::table('users')->delete();
-        
-        \DB::table('users')->insert(array (
-            0 => 
-            array (
+        \DB::table('users')->insert(array(
+            0 => array(
                 'id' => 1,
                 'role_id' => 1,
-                'name' => 'Cristian Marin',
-                'email' => 'cristianmarint@motion.gym',
+                'name' => 'Dev Greyneon',
+                'email' => 'dev@greyneon.com',
                 'avatar' => 'users/default.png',
                 'email_verified_at' => NULL,
-                'password' => '$2y$10$zjqQJ.UQoo2kjGSJ6MrjXOvTrWISvnhHn0MfFW8eWjg.i31x1Zkdu',
-                'remember_token' => 'FQKOvqNP6pMtiCFa5cxYIZv8E0nksv7jBdoETYc2NkVxJ6TE0UdCXg8O4ld8',
+                'password' => '$2y$10$lqe0gevE9u9MijGbNtQgu.SQf8NuUi9VrM406kIf3KAXmlVlKdd/m',
+                'remember_token' => '',
                 'settings' => '{"locale":"en"}',
                 'deleted_at' => NULL,
                 'created_at' => '2019-07-24 21:28:15',
@@ -34,7 +28,6 @@ class UsersTableSeeder extends Seeder
                 'person_id' => NULL,
             ),
         ));
-        
-        
+
     }
 }

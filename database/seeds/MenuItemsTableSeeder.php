@@ -2,23 +2,17 @@
 
 use Illuminate\Database\Seeder;
 
-class MenuItemsTableSeeder extends Seeder
-{
+class MenuItemsTableSeeder extends Seeder {
 
     /**
      * Auto generated seed file
      *
      * @return void
      */
-    public function run()
-    {
-        
+    public function run() {
 
-        \DB::table('menu_items')->delete();
-        
-        \DB::table('menu_items')->insert(array (
-            0 => 
-            array (
+        \DB::table('menu_items')->insert(array(
+            0 => array(
                 'id' => 1,
                 'menu_id' => 1,
                 'title' => 'Dashboard',
@@ -33,8 +27,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.dashboard',
                 'parameters' => NULL,
             ),
-            1 => 
-            array (
+            1 => array(
                 'id' => 2,
                 'menu_id' => 1,
                 'title' => 'Media',
@@ -49,8 +42,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.media.index',
                 'parameters' => NULL,
             ),
-            2 => 
-            array (
+            2 => array(
                 'id' => 3,
                 'menu_id' => 1,
                 'title' => 'Users',
@@ -65,8 +57,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.users.index',
                 'parameters' => NULL,
             ),
-            3 => 
-            array (
+            3 => array(
                 'id' => 4,
                 'menu_id' => 1,
                 'title' => 'Roles',
@@ -81,8 +72,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.roles.index',
                 'parameters' => NULL,
             ),
-            4 => 
-            array (
+            4 => array(
                 'id' => 5,
                 'menu_id' => 1,
                 'title' => 'Tools',
@@ -97,8 +87,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => NULL,
             ),
-            5 => 
-            array (
+            5 => array(
                 'id' => 6,
                 'menu_id' => 1,
                 'title' => 'Menu Builder',
@@ -113,8 +102,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.menus.index',
                 'parameters' => NULL,
             ),
-            6 => 
-            array (
+            6 => array(
                 'id' => 7,
                 'menu_id' => 1,
                 'title' => 'Database',
@@ -129,8 +117,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.database.index',
                 'parameters' => NULL,
             ),
-            7 => 
-            array (
+            7 => array(
                 'id' => 8,
                 'menu_id' => 1,
                 'title' => 'Compass',
@@ -145,8 +132,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.compass.index',
                 'parameters' => NULL,
             ),
-            8 => 
-            array (
+            8 => array(
                 'id' => 9,
                 'menu_id' => 1,
                 'title' => 'BREAD',
@@ -161,8 +147,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.bread.index',
                 'parameters' => NULL,
             ),
-            9 => 
-            array (
+            9 => array(
                 'id' => 10,
                 'menu_id' => 1,
                 'title' => 'Settings',
@@ -177,8 +162,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.settings.index',
                 'parameters' => NULL,
             ),
-            10 => 
-            array (
+            10 => array(
                 'id' => 11,
                 'menu_id' => 1,
                 'title' => 'Admin',
@@ -193,8 +177,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            11 => 
-            array (
+            11 => array(
                 'id' => 12,
                 'menu_id' => 1,
                 'title' => 'Products',
@@ -209,8 +192,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            12 => 
-            array (
+            12 => array(
                 'id' => 13,
                 'menu_id' => 1,
                 'title' => 'Categories',
@@ -225,8 +207,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.category.index',
                 'parameters' => 'null',
             ),
-            13 => 
-            array (
+            13 => array(
                 'id' => 14,
                 'menu_id' => 1,
                 'title' => 'Products',
@@ -241,8 +222,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.product.index',
                 'parameters' => 'null',
             ),
-            14 => 
-            array (
+            14 => array(
                 'id' => 15,
                 'menu_id' => 1,
                 'title' => 'Sells',
@@ -257,8 +237,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            15 => 
-            array (
+            15 => array(
                 'id' => 16,
                 'menu_id' => 1,
                 'title' => 'Invoices',
@@ -273,8 +252,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.invoice.index',
                 'parameters' => 'null',
             ),
-            16 => 
-            array (
+            16 => array(
                 'id' => 17,
                 'menu_id' => 1,
                 'title' => 'Discounts',
@@ -289,152 +267,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.extra.index',
                 'parameters' => 'null',
             ),
-            17 => 
-            array (
-                'id' => 18,
-                'menu_id' => 1,
-                'title' => 'Insurance Companies',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-user-shield',
-                'color' => '#000000',
-                'parent_id' => NULL,
-                'order' => 8,
-                'created_at' => '2019-07-26 13:05:05',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => 'voyager.insurance-company.index',
-                'parameters' => NULL,
-            ),
-            18 => 
-            array (
-                'id' => 19,
-                'menu_id' => 1,
-                'title' => 'Refund',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-undo-alt',
-                'color' => '#000000',
-                'parent_id' => 15,
-                'order' => 4,
-                'created_at' => '2019-07-26 13:06:58',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => 'voyager.refund.index',
-                'parameters' => 'null',
-            ),
-            19 => 
-            array (
-                'id' => 20,
-                'menu_id' => 1,
-                'title' => 'Gym Services',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fab fa-buffer',
-                'color' => '#000000',
-                'parent_id' => NULL,
-                'order' => 7,
-                'created_at' => '2019-07-26 13:08:43',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => 'voyager.service.index',
-                'parameters' => NULL,
-            ),
-            20 => 
-            array (
-                'id' => 21,
-                'menu_id' => 1,
-                'title' => 'Payment methods',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-credit-card',
-                'color' => '#000000',
-                'parent_id' => 15,
-                'order' => 5,
-                'created_at' => '2019-07-26 13:10:05',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => 'voyager.payment-method.index',
-                'parameters' => 'null',
-            ),
-            21 => 
-            array (
-                'id' => 22,
-                'menu_id' => 1,
-                'title' => 'People',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-users',
-                'color' => '#000000',
-                'parent_id' => NULL,
-                'order' => 2,
-                'created_at' => '2019-07-26 13:12:39',
-                'updated_at' => '2019-07-26 13:12:47',
-                'route' => 'voyager.people.index',
-                'parameters' => NULL,
-            ),
-            22 => 
-            array (
-                'id' => 23,
-                'menu_id' => 1,
-                'title' => 'Country',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-globe-americas',
-                'color' => '#000000',
-                'parent_id' => NULL,
-                'order' => 6,
-                'created_at' => '2019-07-26 13:14:20',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => NULL,
-                'parameters' => '',
-            ),
-            23 => 
-            array (
-                'id' => 24,
-                'menu_id' => 1,
-                'title' => 'States',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-map-marked-alt',
-                'color' => '#000000',
-                'parent_id' => 23,
-                'order' => 2,
-                'created_at' => '2019-07-26 13:15:02',
-                'updated_at' => '2019-07-26 13:16:48',
-                'route' => 'voyager.state.index',
-                'parameters' => 'null',
-            ),
-            24 => 
-            array (
-                'id' => 25,
-                'menu_id' => 1,
-                'title' => 'Cities',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-city',
-                'color' => '#000000',
-                'parent_id' => 23,
-                'order' => 1,
-                'created_at' => '2019-07-26 13:16:20',
-                'updated_at' => '2019-07-26 13:16:33',
-                'route' => 'voyager.city.index',
-                'parameters' => NULL,
-            ),
-            25 => 
-            array (
-                'id' => 26,
-                'menu_id' => 1,
-                'title' => 'Details',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => 'fas fa-file-invoice',
-                'color' => '#000000',
-                'parent_id' => 15,
-                'order' => 2,
-                'created_at' => '2019-07-30 14:47:11',
-                'updated_at' => '2019-08-01 01:05:14',
-                'route' => 'voyager.detail.index',
-                'parameters' => 'null',
-            ),
-            26 => 
-            array (
+            17 => array(
                 'id' => 27,
                 'menu_id' => 1,
                 'title' => 'Memberships',
@@ -449,8 +282,128 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.membership.index',
                 'parameters' => 'null',
             ),
+            18 => array(
+                'id' => 19,
+                'menu_id' => 1,
+                'title' => 'Refund',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-undo-alt',
+                'color' => '#000000',
+                'parent_id' => 15,
+                'order' => 4,
+                'created_at' => '2019-07-26 13:06:58',
+                'updated_at' => '2019-08-01 01:05:14',
+                'route' => 'voyager.refund.index',
+                'parameters' => 'null',
+            ),
+            19 => array(
+                'id' => 20,
+                'menu_id' => 1,
+                'title' => 'Gym Services',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fab fa-buffer',
+                'color' => '#000000',
+                'parent_id' => NULL,
+                'order' => 7,
+                'created_at' => '2019-07-26 13:08:43',
+                'updated_at' => '2019-08-01 01:05:14',
+                'route' => 'voyager.service.index',
+                'parameters' => NULL,
+            ),
+            20 => array(
+                'id' => 21,
+                'menu_id' => 1,
+                'title' => 'Payment methods',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-credit-card',
+                'color' => '#000000',
+                'parent_id' => 15,
+                'order' => 5,
+                'created_at' => '2019-07-26 13:10:05',
+                'updated_at' => '2019-08-01 01:05:14',
+                'route' => 'voyager.payment-method.index',
+                'parameters' => 'null',
+            ),
+            21 => array(
+                'id' => 22,
+                'menu_id' => 1,
+                'title' => 'People',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-users',
+                'color' => '#000000',
+                'parent_id' => NULL,
+                'order' => 2,
+                'created_at' => '2019-07-26 13:12:39',
+                'updated_at' => '2019-07-26 13:12:47',
+                'route' => 'voyager.people.index',
+                'parameters' => NULL,
+            ),
+            22 => array(
+                'id' => 23,
+                'menu_id' => 1,
+                'title' => 'Country',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-globe-americas',
+                'color' => '#000000',
+                'parent_id' => NULL,
+                'order' => 6,
+                'created_at' => '2019-07-26 13:14:20',
+                'updated_at' => '2019-08-01 01:05:14',
+                'route' => NULL,
+                'parameters' => '',
+            ),
+            23 => array(
+                'id' => 24,
+                'menu_id' => 1,
+                'title' => 'States',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-map-marked-alt',
+                'color' => '#000000',
+                'parent_id' => 23,
+                'order' => 2,
+                'created_at' => '2019-07-26 13:15:02',
+                'updated_at' => '2019-07-26 13:16:48',
+                'route' => 'voyager.state.index',
+                'parameters' => 'null',
+            ),
+            24 => array(
+                'id' => 25,
+                'menu_id' => 1,
+                'title' => 'Cities',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-city',
+                'color' => '#000000',
+                'parent_id' => 23,
+                'order' => 1,
+                'created_at' => '2019-07-26 13:16:20',
+                'updated_at' => '2019-07-26 13:16:33',
+                'route' => 'voyager.city.index',
+                'parameters' => NULL,
+            ),
+            25 => array(
+                'id' => 26,
+                'menu_id' => 1,
+                'title' => 'Details',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'fas fa-file-invoice',
+                'color' => '#000000',
+                'parent_id' => 15,
+                'order' => 2,
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-08-01 01:05:14',
+                'route' => 'voyager.detail.index',
+                'parameters' => 'null',
+            ),
+
         ));
-        
-        
+
     }
 }
