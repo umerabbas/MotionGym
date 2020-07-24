@@ -79,7 +79,7 @@ class AdminMenuItemsTableSeeder extends Seeder {
             'color' => '#000000',
             'parent_id' => NULL,
             'order' => 7,
-            'route' => 'voyager.attendance.index',
+            'route' => 'voyager.attendances.index',
             'parameters' => NULL,
         ),
         array(
