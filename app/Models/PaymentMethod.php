@@ -7,25 +7,22 @@
  * @ Description:
  */
 
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Payment_method extends Model
-{
+class PaymentMethod extends Model {
     protected $table = 'payment_method';
-    
+
     use SoftDeletes;
 
     protected $fillable = [
         'name',
-        'description'
+        'description',
     ];
 
-    public function invoice()
-    {
+    public function invoice() {
         return $this->hasOne('Invoice');
     }
 }

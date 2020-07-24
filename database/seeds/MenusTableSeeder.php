@@ -4,21 +4,17 @@ use Illuminate\Database\Seeder;
 
 class MenusTableSeeder extends Seeder {
 
-    /**
-     * Auto generated seed file
-     *
-     * @return void
-     */
+    private $data = [
+        array(
+            'name' => 'admin',
+        ),
+    ];
+
     public function run() {
 
-        \DB::table('menus')->insert(array(
-            0 => array(
-                'id' => 1,
-                'name' => 'admin',
-                'created_at' => '2019-07-26 04:55:54',
-                'updated_at' => '2019-07-26 04:55:54',
-            ),
-        ));
+        foreach ($this->data as $each) {
+            \TCG\Voyager\Models\Menu::create($each);
+        }
 
     }
 }

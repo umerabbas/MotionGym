@@ -18,7 +18,6 @@ class DatabaseSeeder extends Seeder {
     public function run() {
 
         // Basic Settings & Dummy data (DO NOT USE VOYAGER ONES DUE TO LOSE IN DATA)
-        // $this->call(RemoveVoyagerDataSeeder::class);
 
         $this->call(DataTypesTableSeeder::class);
         $this->call(DataRowsTableSeeder::class);
@@ -33,9 +32,7 @@ class DatabaseSeeder extends Seeder {
         $this->call(SettingsTableSeeder::class);
 
         $this->call(UsersTableSeeder::class);
-        $this->call(UserRolesTableSeeder::class);
         $this->call(PaymentMethodTableSeeder::class);
-        $this->call(RefundTableSeeder::class);
-        $this->call(TranslationsTableSeeder::class);
+
     }
 }
