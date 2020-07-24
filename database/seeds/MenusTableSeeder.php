@@ -6,6 +6,9 @@ class MenusTableSeeder extends Seeder {
 
     private $data = [
         array(
+            'name' => 'dev',
+        ),
+        array(
             'name' => 'admin',
         ),
         array(

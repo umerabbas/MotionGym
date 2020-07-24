@@ -6,12 +6,12 @@ class RolesTableSeeder extends Seeder {
 
     private $data = [
         array(
-            'name' => 'admin',
-            'display_name' => 'Administrator',
-        ),
-        array(
             'name' => 'dev',
             'display_name' => 'Developer',
+        ),
+        array(
+            'name' => 'admin',
+            'display_name' => 'Administrator',
         ),
         array(
             'name' => 'user',

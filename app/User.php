@@ -3,11 +3,8 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends \TCG\Voyager\Models\User
-{
+class User extends \TCG\Voyager\Models\User {
     use Notifiable;
 
     /**
@@ -37,13 +34,15 @@ class User extends \TCG\Voyager\Models\User
         'email_verified_at' => 'datetime',
     ];
 
-    public function person()
-    {
+    public function scopeUsers($query) {
+        return $query->where('name', '!=', 'dev');
+    }
+
+    public function person() {
         return $this->belongsTo('App\Models\Person');
     }
 
-    public function seller_user()
-    {
+    public function seller_user() {
         return $this->hasOne('App\Models\Invoice');
     }
 }

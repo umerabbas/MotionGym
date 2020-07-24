@@ -6,7 +6,7 @@ class UsersTableSeeder extends Seeder {
 
     private $data = [
         array(
-            'role_id' => 'admin',
+            'role_id' => 'dev',
             'name' => 'Dev Greyneon',
             'email' => 'dev@greyneon.com',
             'avatar' => 'users/default.png',
